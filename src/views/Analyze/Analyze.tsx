@@ -4,35 +4,35 @@
  */
 
 import * as React from "react";
+import { useEffect } from "react";
 import { Button } from "react-bulma-components";
 import {
-  Chart,
   ArcElement,
-  LineElement,
-  BarElement,
-  PointElement,
   BarController,
+  BarElement,
   BubbleController,
-  DoughnutController,
-  LineController,
-  PieController,
-  PolarAreaController,
-  RadarController,
-  ScatterController,
   CategoryScale,
-  LinearScale,
-  LogarithmicScale,
-  RadialLinearScale,
-  TimeScale,
-  TimeSeriesScale,
+  Chart,
   Decimation,
+  DoughnutController,
   Filler,
   Legend,
+  LinearScale,
+  LineController,
+  LineElement,
+  LogarithmicScale,
+  PieController,
+  PointElement,
+  PolarAreaController,
+  RadarController,
+  RadialLinearScale,
+  ScatterController,
+  SubTitle,
+  TimeScale,
+  TimeSeriesScale,
   Title,
   Tooltip,
-  SubTitle,
 } from "chart.js";
-import { useEffect } from "react";
 
 Chart.register(
   ArcElement,
