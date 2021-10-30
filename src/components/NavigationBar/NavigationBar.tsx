@@ -6,6 +6,7 @@ import * as React from "react";
 import { Button, Navbar } from "react-bulma-components";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
+import ExtRedirect from "../ExtRedirect/ExtRedirect";
 
 export default function NavigationBar() {
   return (
@@ -53,8 +54,10 @@ export default function NavigationBar() {
           <Navbar.Item renderAs={Link} to={"/analyze"}>
             Analyze
           </Navbar.Item>
-          <Navbar.Item renderAs={Link} to={"/docs"}>
-            Docs
+          <Navbar.Item>
+            <ExtRedirect url={"https://docs.craftions.net/docs/analytics/api"}>
+              Documentation
+            </ExtRedirect>
           </Navbar.Item>
         </div>
         <div className={"navbar-end"}>
