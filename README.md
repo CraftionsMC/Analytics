@@ -1,7 +1,7 @@
 
-# craftions-base
+#  @craftions/analytics
 
-This is the base of all craftions web apps.
+Craftions Analytics
 
 
 ## Run Locally
@@ -9,13 +9,13 @@ This is the base of all craftions web apps.
 Clone the project
 
 ```bash
-  git clone https://github.com/CraftionsMC/craftions-base
+  git clone https://github.com/CraftionsMC/analytics
 ```
 
 Go to the project directory
 
 ```bash
-  cd craftions-base
+  cd analytics
 ```
 
 Install dependencies

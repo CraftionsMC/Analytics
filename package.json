@@ -1,15 +1,15 @@
 {
-  "name": "@craftions/craftions-base-app",
+  "name": "@craftions/analytics",
   "version": "1.0.0",
-  "description": "A base template for every craftions webapp",
-  "main": "server/index.js",
+  "description": "Craftions Analytics",
+  "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/CraftionsMC/craftions-base"
+    "url": "https://github.com/CraftionsMC/analytics"
   },
-  "homepage": "https://github.com/CraftionsMC/craftions-base#readme",
+  "homepage": "https://github.com/CraftionsMC/analytics#readme",
   "bugs": {
-    "url": "https://github.com/CraftionsMC/craftions-base/issues"
+    "url": "https://github.com/CraftionsMC/analytics/issues"
   },
   "scripts": {
     "webpack:clean": "rm dist/bundle.js",
@@ -25,9 +25,9 @@
     "prettier:check": "prettier --check src",
     "prettier:write": "prettier --write src",
     "npm:deploy": "npm publish",
-    "docker:build": "docker build . -t\"mctzock/craftions-base\"",
-    "docker:deploy": "docker push mctzock/craftions-base",
-    "docker:run": "docker run -d --publish 8080:3000 --name craftions-base mctzock/craftions-base",
+    "docker:build": "docker build . -t\"mctzock/analytics\"",
+    "docker:deploy": "docker push mctzock/analytics",
+    "docker:run": "docker run -d --publish 8080:3000 --name analytics mctzock/analytics",
     "nodemon:start": "nodemon --config nodemon.json"
   },
   "author": "The Craftopns Developers",
@@ -41,12 +41,14 @@
     "bulma-prefers-dark": "^0.1.0-beta.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "inherits": "^2.0.4",
     "kill-port": "^1.6.1",
     "react": "^17.0.2",
     "react-bulma-components": "^4.0.7",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.3.0",
-    "react-typing-animation": "^1.6.2"
+    "react-typing-animation": "^1.6.2",
+    "ua-parser-js": "^1.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",

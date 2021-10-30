@@ -6,8 +6,9 @@
 import * as React from "react";
 
 import { Footer as BulmaFooter } from "react-bulma-components";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import "./Footer.scss";
+import ExtRedirect from "../ExtRedirect/ExtRedirect";
 
 export default function Footer() {
   return (
@@ -21,7 +22,9 @@ export default function Footer() {
         <div className={"has-text-centered content"}>
           <p>
             Copyright © 2020-{new Date().getFullYear()}
-            <Link to={"/"}>&nbsp;Craftions</Link>
+            <ExtRedirect url={"https://craftions.net"}>
+              &nbsp;Craftions
+            </ExtRedirect>
             . All rights reserved.
             <br />
             The website is licensed&nbsp;

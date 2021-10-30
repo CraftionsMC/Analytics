@@ -14,7 +14,7 @@ export default function NavigationBar() {
         <Navbar.Item renderAs={Link} to={"/"}>
           <img src={logo} alt={"Craftions"} />
           <h1 className={"web_logo_name"} style={{ paddingLeft: "0.5rem" }}>
-            Craftions
+            Craftions Analytics
           </h1>
         </Navbar.Item>
         <Navbar.Burger
@@ -50,6 +50,9 @@ export default function NavigationBar() {
           <Navbar.Item renderAs={Link} to={"/"}>
             Home
           </Navbar.Item>
+          <Navbar.Item renderAs={Link} to={"/docs"}>
+            Docs
+          </Navbar.Item>
         </div>
         <div className={"navbar-end"}>
           <Navbar.Item>
@@ -60,7 +63,7 @@ export default function NavigationBar() {
                   window.open("https://discord.gg/udNjE2BxGW", "_blank");
                 }}
               >
-                Discord
+                Browse
               </Button>
             </div>
           </Navbar.Item>
