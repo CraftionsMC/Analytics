@@ -6,7 +6,7 @@
 console.log("%cCraftions Analytics", "color: #ED4245; font-size: 2rem;");
 console.log(
   "%cThank you for using Craftions Analytics",
-  "color: #5865F2; font-size: 1.5rem;"
+  "color: #5865F2; font-size: 1.25rem;"
 );
 console.log("%cSending Payload...", "color: #FEE75C;");
 
