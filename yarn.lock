@@ -281,6 +281,7 @@ __metadata:
     body-parser: ^1.19.0
     bulma: ^0.9.3
     bulma-prefers-dark: ^0.1.0-beta.1
+    chart.js: ^3.6.0
     concurrently: ^6.3.0
     copy-webpack-plugin: ^9.0.1
     cors: ^2.8.5
@@ -2184,6 +2185,13 @@ __metadata:
     ansi-styles: ^4.1.0
     supports-color: ^7.1.0
   checksum: fe75c9d5c76a7a98d45495b91b2172fa3b7a09e0cc9370e5c8feb1c567b85c4288e2b3fded7cfdd7359ac28d6b3844feb8b82b8686842e93d23c827c417e83fc
+  languageName: node
+  linkType: hard
+
+"chart.js@npm:^3.6.0":
+  version: 3.6.0
+  resolution: "chart.js@npm:3.6.0"
+  checksum: c5d372cb5249d668993a3ddc455b86d5504aa8c34815daa3782fc63d23b62551bcfb06c1c87934b1c88996f9aa922d707bb1e69874c0d3af7dfede7c11ba3c90
   languageName: node
   linkType: hard
 
