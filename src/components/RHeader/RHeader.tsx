@@ -45,7 +45,12 @@ export default function RHeader(props: Props) {
     iContent = props.customRightHand;
   } else {
     iContent = (
-      <img src={props.image} alt={props.imageAlt} style={props.imageStyle} />
+      <img
+        src={props.image}
+        alt={props.imageAlt}
+        style={props.imageStyle}
+        width={256}
+      />
     );
   }
 

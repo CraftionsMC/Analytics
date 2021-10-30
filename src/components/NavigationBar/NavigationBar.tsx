@@ -50,6 +50,9 @@ export default function NavigationBar() {
           <Navbar.Item renderAs={Link} to={"/"}>
             Home
           </Navbar.Item>
+          <Navbar.Item renderAs={Link} to={"/analyze"}>
+            Analyze
+          </Navbar.Item>
           <Navbar.Item renderAs={Link} to={"/docs"}>
             Docs
           </Navbar.Item>
@@ -57,13 +60,8 @@ export default function NavigationBar() {
         <div className={"navbar-end"}>
           <Navbar.Item>
             <div className="buttons">
-              <Button
-                color={"link"}
-                onClick={() => {
-                  window.open("https://discord.gg/udNjE2BxGW", "_blank");
-                }}
-              >
-                Browse
+              <Button color={"link"} renderAs={Link} to={"/analyze"}>
+                Analyze
               </Button>
             </div>
           </Navbar.Item>

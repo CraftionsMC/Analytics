@@ -3,6 +3,13 @@
  * @copyright (c) 2018-2021 Ben Siebert. All rights reserved.
  */
 
+console.log("%cCraftions Analytics", "color: #ED4245; font-size: 2rem;");
+console.log(
+  "%cThank you for using Craftions Analytics",
+  "color: #5865F2; font-size: 1.5rem;"
+);
+console.log("%cSending Payload...", "color: #FEE75C;");
+
 fetch("/api/v1/analyze", {
   method: "POST",
   mode: "cors",
@@ -38,4 +45,11 @@ fetch("/api/v1/analyze", {
   }),
 })
   .then((r) => r.json())
-  .then((j) => console.log(j));
+  .then((j) => {
+    console.log("%cPayload send successfully!", "color: #57F287;");
+    console.log("Response: " + JSON.stringify(j));
+  })
+  .catch((err) => {
+    console.log("%cPayload could not be sent!", "color: #ED4245;");
+    console.log("Error: " + err);
+  });
