@@ -168,8 +168,16 @@ app.post("/api/v1/analytics", (req, res) => {
         data[req.body.host].clientData["browser"].forEach((ua) => {
           const instance = uaParser(ua);
 
-          const browser = instance.browser.name;
-          const os = instance.os.name;
+          let browser = instance.browser.name;
+          let os = instance.os.name;
+
+          if (browser === null || browser === undefined) {
+            browser = "other";
+          }
+
+          if (os === null || os === undefined) {
+            os = "other";
+          }
 
           stats.visits++;
 
